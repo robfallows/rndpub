@@ -1,0 +1,13 @@
+<head>
+  <title>rndpub</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#each doc in numbers}}
+    <p>{{doc.random}}</p>
+  {{/each}}
+</template>
